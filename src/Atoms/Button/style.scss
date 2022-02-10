@@ -1,0 +1,18 @@
+@import './../../assets/styles/colors.scss';
+
+.button {
+    cursor: pointer;
+
+    background-color: $primary;
+    border-radius: 1px;
+    border-color: transparent;
+
+    font-size: 20px;
+    line-height: 29px;
+
+    color: $background;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}

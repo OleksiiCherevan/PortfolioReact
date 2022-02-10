@@ -1,0 +1,20 @@
+@import './../../assets/styles/colors.scss';
+
+.mobile-nav-item {
+  width: 100%;
+  display: block;
+  padding: 0 20px 0 20px;
+
+  background-color: $additional;
+  color: $dark;
+
+  text-decoration: none;
+  text-align: center;
+
+  font-size: 3em;
+
+  &:hover {
+      background-color: $primary;
+      color: $additional;
+  }
+}

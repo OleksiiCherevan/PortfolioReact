@@ -1,0 +1,85 @@
+@import "./../../assets/styles/main.scss";
+
+.work-presenter {
+    padding-left: 20%;
+    padding-right: 20%;
+
+    &__header {
+        .work-snippet {
+            &__title {
+                color: #212529;
+                font-weight: 300;
+            }
+
+            &__meta-container {
+                display: flex;
+                flex-direction: row;
+
+                padding-bottom: 2em;
+
+                .work-snippet {
+                    &__datetime-published {
+                        display: block;
+
+                        height: 1.5em;
+                        width: 4em;
+
+                        margin-right: 1em;
+                        border-radius: 32px;
+
+                        background-color: $primary;
+                        text-align: center;
+                        color: #fff;
+                    }
+
+                    &__hubs-items {
+                        color: #8695a4;
+                    }
+                }
+            }
+        }
+
+        .heading-img {
+            .photo {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        & {
+            padding-left: $page-pagging-x;
+            padding-right: $page-pagging-x;
+        }
+    }
+}
+
+.work-body {
+
+    &-describe {
+        padding-bottom: 0.5em;
+        font-size: 1.2em;
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.2em;
+        white-space: normal;
+    }
+}
+.small-padding-bottom {
+    padding-bottom: 1em;
+}
+
+.medium-padding-bottom {
+    padding-bottom: 2em;
+}
+
+.big-padding-bottom {
+    padding-bottom: 3em;
+}

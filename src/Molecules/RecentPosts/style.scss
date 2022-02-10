@@ -1,0 +1,22 @@
+@import "./../../assets/styles/main.scss";
+
+.recent-posts {
+    height: 396px;
+    padding: 0 $page-pagging-x 0 $page-pagging-x; 
+    
+    background-color: $additional;
+
+    &__title {
+        padding-top: 7px;
+    }
+
+    &-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        &__card {
+            flex: 1;
+        }
+    }
+}

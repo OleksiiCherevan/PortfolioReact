@@ -1,0 +1,78 @@
+@import "./../../assets/styles/main.scss";
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: $page-pagging-x;
+    padding-right: $page-pagging-x;
+
+    &__label {
+        font-size: x-large;
+        padding-bottom: 4%;
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10%;
+
+        &__profile-photo {
+            min-width: 25vw;
+            max-width: 25vw;
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+
+        &__description {
+            align-self: flex-start;
+            flex: 5;
+        }
+
+        &_form {
+            flex: 5;
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 2rem;
+
+        &-body {
+            flex-direction: column;
+
+            gap: 4rem;
+
+            &__label {
+                padding-bottom: 10px;
+            }
+
+            &__profile-photo {
+                display: none;
+                min-width: 100%;
+                max-width: 100%;
+
+                > img {
+                    width: 100%;
+                    border-radius: 2%;
+                }
+            }
+
+            &__description {
+                padding-bottom: 20%;
+                text-align: center;
+            }
+
+            &-form {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import './../../assets/styles/colors.scss';
+.text-box {
+    border-bottom: solid $light 2px;
+    background-color: transparent;
+    &__pattern {
+        color: $light;
+    }
+
+    &__inputHelp {
+        color: red;
+        font-size: 0.7em;
+    }
+
+    > input {
+        background-color: transparent;
+        outline: none;
+        border-width: 0;
+        word-wrap: break-word;
+
+        font-size: 1.2em;
+        color: $light;
+
+        width: 100%;
+    }
+}

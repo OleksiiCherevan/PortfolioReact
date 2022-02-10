@@ -1,0 +1,12 @@
+@import './../../assets/styles/colors.scss';
+
+.blog {
+    padding-left: 15%;
+    padding-right: 15%;
+
+    background-color: $background;
+    
+    &__label {
+        padding: 1em 0 1em 0    
+    }
+}

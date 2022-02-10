@@ -1,0 +1,47 @@
+@import "./../../assets/styles/main.scss";
+
+.user-description {
+    max-width: 500px;
+    padding-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 27px;
+
+    background-color: $background;
+
+    &__name {
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+
+    &__text {
+        font-size: 1rem;
+        line-height: 23px;
+        margin-bottom: 4px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        & {
+            &_position {
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__name {
+                text-align: center;
+                white-space: pre-wrap;
+            }
+
+            &__profesion {
+                text-align: center;
+            }
+
+            &__text {
+                text-align: center;
+            }
+        }
+    }
+}

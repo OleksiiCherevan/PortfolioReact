@@ -1,0 +1,51 @@
+@import "./../../assets/styles/main.scss";
+
+.post {
+    height: calc(295px - 24px);
+    width: 374;
+    padding: 24px 21px 0 23px;
+
+    background-color: $background;
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        padding-bottom: 1em;
+    }
+
+    &__header {
+        height: 85px;
+        color: $dark;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    &-meta {
+        display: flex;
+        justify-content: left;
+
+        flex-direction: row;
+        margin-top: 17px;
+        padding-bottom: 1em;
+
+        &__date {
+            font-size: 18px;
+            line-height: 26px;
+
+            padding-right: 29px;
+            border-right: 1px solid $dark;
+        }
+
+
+
+        &__topic {
+            font-size: 18px;
+            line-height: 26px;
+            margin-left: 26px;
+        }
+    }
+
+    &__description {
+        font-size: 1rem;
+    }
+}

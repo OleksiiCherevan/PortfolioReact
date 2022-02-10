@@ -1,0 +1,32 @@
+@import "./../../assets/styles/main.scss";
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    &-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 2em;
+    }
+
+    &__submit {
+        height: 40px;
+        cursor: pointer;
+        
+        border: solid $light 2px;
+
+        background-color: transparent;
+        color: $light;
+
+        &:hover {
+            background-color: $primary;
+            color: $additional;
+            border-color: transparent;
+        }
+    }
+}

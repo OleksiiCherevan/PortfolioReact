@@ -1,0 +1,18 @@
+@import './../../assets/styles/colors.scss';
+
+.desktop-nav-item {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  color: $dark;
+  
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary;
+  }
+}

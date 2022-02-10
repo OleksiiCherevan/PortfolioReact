@@ -1,0 +1,22 @@
+@import "./../../assets/styles/main.scss";
+
+.featured-works {
+    padding: 0 $page-pagging-x 0 $page-pagging-x;
+
+    &__title {
+        padding-top: 15px;
+    }
+
+    &__cards {
+        padding-top: 22px;
+    }
+
+    &__card {
+     
+
+    }
+
+    &__card-separate {
+        padding-bottom: 30px;
+    }
+}

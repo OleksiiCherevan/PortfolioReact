@@ -1,0 +1,19 @@
+@import './../../assets/styles/colors.scss';
+
+.works {
+    padding-left: 15%;
+    padding-right: 15%;
+
+    
+
+    &__title {
+        padding-bottom: 1em;
+        background-color: $background;
+    }
+
+    &__body { 
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}

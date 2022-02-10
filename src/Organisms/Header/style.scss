@@ -1,0 +1,44 @@
+@import "./../../assets/styles/main.scss";
+
+$svg-menu: url("./../../assets/img/menu/menu.png");
+
+.header {
+    min-height: 70px;
+    padding-right: 60px;
+
+    @media screen and (max-width: 768px) {
+        padding-right: 0;
+    }
+
+    .navigation {
+        margin-top: 26px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: $background;
+
+        gap: 34px;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .navigation-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        background-color: $background;
+
+        &__list {
+            width: 100%;
+            padding: 0;
+
+            background-color: $additional;
+        }
+
+        @media screen and (min-width: 769px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "./../../assets/styles/main.scss";
+
+.about-user {
+  padding: 147px $page-pagging-x 0 $page-pagging-x;
+  height: (525px - 147px);
+
+  display: flex;
+  justify-content: space-between;
+
+  &__user-photo {
+    position: relative;
+    left: -5px;
+    top: -8px;
+  }
+}
