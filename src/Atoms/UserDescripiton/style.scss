@@ -24,24 +24,16 @@
     }
 
     @media only screen and (max-width: 768px) {
-        & {
-            &_position {
-                justify-content: center;
-                align-items: center;
-            }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-            &__name {
-                text-align: center;
-                white-space: pre-wrap;
-            }
+        &__name {
+            text-align: center;
+        }
 
-            &__profesion {
-                text-align: center;
-            }
-
-            &__text {
-                text-align: center;
-            }
+        &__text {
+            text-align: center;
         }
     }
 }

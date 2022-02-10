@@ -1,3 +1,15 @@
+@import './../../assets/styles/main.scss';
+
 .home {
-    
+    display: flex;
+    flex-direction: column;
+
+    &__about {
+        padding-bottom: 30px;
+    }
+
+    &__recent-posts {
+        padding-bottom: 30px;
+        background-color: $additional;
+    }
 }

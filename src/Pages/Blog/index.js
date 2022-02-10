@@ -10,26 +10,26 @@ import Separate from "../../Atoms/Separate";
 const Blog = () => {
     const [posts, setPosts] = useState([]);
 
-    const fetchPost = () => {
-        fetch(serverAPI + "/api/posts")
-            .then((req) => req.json())
-            .then((res) => setPosts(res))
-            .catch((err) => err);
-    };
+    // const fetchPost = () => {
+    //     fetch(serverAPI + "/api/posts")
+    //         .then((req) => req.json())
+    //         .then((res) => setPosts(res))
+    //         .catch((err) => err);
+    // };
 
     useEffect(() => {
         setPosts(getStaticPosts);
-        fetchPost();
+        // fetchPost();
     }, []);
 
     return (
         <div className="blog">
             <h1 className="blog__label">Blog</h1>
-            <div className="blog_body">
+            <div className="blog__body">
                 {posts.map((post) => (
-                    <div key={post.key}>
+                    <div className="blog__card" key={post.key}>
                         <Post {...post}></Post>
-                        <Separate ></Separate>
+                        <Separate></Separate>
                     </div>
                 ))}
             </div>

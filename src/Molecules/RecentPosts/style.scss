@@ -2,21 +2,34 @@
 
 .recent-posts {
     height: 396px;
-    padding: 0 $page-pagging-x 0 $page-pagging-x; 
-    
-    background-color: $additional;
+    padding: 0 $page-pagging-x 0 $page-pagging-x;
+
 
     &__title {
         padding-top: 7px;
     }
 
     &-cards {
+        height: 295px;
         display: flex;
         flex-direction: row;
         gap: 20px;
+    }
 
-        &__card {
-            flex: 1;
+    &__card {
+        background-color: $background;
+        padding: 20px;
+        border-radius: 5px;
+        flex: 1;
+    }
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+
+        padding: 0 $mobile-page-padding-x 0 $mobile-page-padding-x;
+        &-cards {
+            height: auto;
+            flex-direction: column;
         }
     }
 }

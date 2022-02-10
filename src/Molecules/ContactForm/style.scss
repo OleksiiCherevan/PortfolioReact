@@ -1,21 +1,24 @@
 @import "./../../assets/styles/main.scss";
 
 .contact-form {
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    padding: 10px;
-    border-radius: 5px;
 
     &-fields {
+        width: 100%;
+        padding-bottom: 2em;
+        
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding-bottom: 2em;
     }
 
     &__submit {
         height: 40px;
+        width: 130px;
         cursor: pointer;
         
         border: solid $light 2px;

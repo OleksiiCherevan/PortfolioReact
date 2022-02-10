@@ -1,19 +1,22 @@
-@import './../../assets/styles/colors.scss';
+@import './../../assets/styles/main.scss';
 
 .works {
-    padding-left: 15%;
-    padding-right: 15%;
-
-    
+    padding: 0 $page-pagging-x;
 
     &__title {
         padding-bottom: 1em;
         background-color: $background;
     }
 
-    &__body { 
+    &__cards { 
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 }

@@ -11,7 +11,7 @@ import Separate from "../../Atoms/Separate";
 
 const countOfFeaturedWorks = 3;
 
-const HomeWorks = () => {
+const FeaturedWorks = () => {
     const [works, setWorks] = useState([]);
 
     const fetchWorks = () => {
@@ -34,8 +34,8 @@ const HomeWorks = () => {
 
             <div className="featured-works__cards">
                 {works.map((work) => (
-                    <div className="featured-works__card">
-                        <WorkCard key={work.id} {...work}></WorkCard>
+                    <div className="featured-works__card" key={work.id}>
+                        <WorkCard {...work}></WorkCard>
                         <div className="featured-works__card-separate">
                             <Separate></Separate>
                         </div>
@@ -46,4 +46,4 @@ const HomeWorks = () => {
     );
 };
 
-export default HomeWorks;
+export default FeaturedWorks;

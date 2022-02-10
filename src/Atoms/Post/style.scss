@@ -1,19 +1,15 @@
 @import "./../../assets/styles/main.scss";
 
 .post {
-    height: calc(295px - 24px);
+    height: calc(100% - 48px);
     width: 374;
-    padding: 24px 21px 0 23px;
-
-    background-color: $background;
-
+    
     @media screen and (max-width: 768px) {
         width: auto;
         padding-bottom: 1em;
     }
 
     &__header {
-        height: 85px;
         color: $dark;
         font-weight: bold;
         font-size: 26px;

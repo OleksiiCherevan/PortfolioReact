@@ -5,23 +5,24 @@ import { useEffect, useState } from 'react/cjs/react.development'
 import { serverAPI, } from '../../assets/js/util'
 import { getWorks as getStaticWorks } from '../../assets/js/data'
 
-import WorkDetail from '../../Atoms/WorkCard'
+import WorkCard from '../../Atoms/WorkCard'
+import Separate from '../../Atoms/Separate'
 
 const Works = () => {
     const [works, setWorks] = useState([])
 
-    const fetchWorks = async () => {
-        await fetch(serverAPI + '/api/works')
-            .then(req => req.json())
-            .then(res => {
-                setWorks(res)
-            })
-            .catch(err => err)
-    }
+    // const fetchWorks = async () => {
+    //     await fetch(serverAPI + '/api/works')
+    //         .then(req => req.json())
+    //         .then(res => {
+    //             setWorks(res)
+    //         })
+    //         .catch(err => err)
+    // }
 
     useEffect(() => {
         setWorks(getStaticWorks())
-        fetchWorks()
+        // fetchWorks()
     }, [])
 
     return (
@@ -30,11 +31,12 @@ const Works = () => {
                 Works
             </h1>
 
-            <div className='works__body'>
+            <div className='works__cards'>
                 {works.map(work =>
-                <div key={work.id}>
+                <div className='works__card' key={work.id}>
                     {/* <Link to={`/work/${work.id}`}> */}
-                        <WorkDetail key={work.id} {...work}></WorkDetail>
+                        <WorkCard key={work.id} {...work}></WorkCard>
+                        <Separate></Separate>
                     {/* </Link> */}
                 </div>)}
             </div>

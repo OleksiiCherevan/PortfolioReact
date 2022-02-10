@@ -34,8 +34,8 @@ export default () => {
 
             <div className="recent-posts-cards">
                 {posts.map((post) => (
-                    <div key={post.key} className="recent-posts-list__card">
-                        <Post key={post.key} {...post}></Post>
+                    <div key={post.key} className="recent-posts__card">
+                        <Post {...post}></Post>
                     </div>
                 ))}
             </div>

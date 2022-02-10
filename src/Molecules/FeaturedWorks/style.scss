@@ -13,10 +13,19 @@
 
     &__card {
      
-
     }
 
     &__card-separate {
         padding-bottom: 30px;
+    }
+
+    
+    @media only screen and (max-width: 768px) {
+        padding: 0 $mobile-page-padding-x 0 $mobile-page-padding-x;
+        // flex-direction: column;
+        
+    &__title {
+        text-align: center;
+    }
     }
 }

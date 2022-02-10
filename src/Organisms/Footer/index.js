@@ -12,7 +12,7 @@ const Footer = () => {
                         <img className='footer-social__image' src={github} />
                     </div>
                 </a>
-            <div className='footer__copyright'>Copyright ©2021 All rights reserved </div>
+            <div className='footer__copyright'>Copyright ©2022 All rights reserved </div>
         </div>
     )}
     
