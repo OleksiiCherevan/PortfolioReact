@@ -1,8 +1,8 @@
 import "./style.scss";
 
-import About from "../../Molecules/AboutUser";
-import RecentPosts from "../../Molecules/RecentPosts";
-import FeaturedWorks from "../../Molecules/FeaturedWorks";
+import About from "../../Molecules/AboutUser/index";
+import RecentPosts from "../../Molecules/RecentPosts/index";
+import FeaturedWorks from "../../Molecules/FeaturedWorks/index";
 
 const Home = () => {
     return (

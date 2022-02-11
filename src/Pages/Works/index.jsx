@@ -11,18 +11,8 @@ import Separate from '../../Atoms/Separate'
 const Works = () => {
     const [works, setWorks] = useState([])
 
-    // const fetchWorks = async () => {
-    //     await fetch(serverAPI + '/api/works')
-    //         .then(req => req.json())
-    //         .then(res => {
-    //             setWorks(res)
-    //         })
-    //         .catch(err => err)
-    // }
-
     useEffect(() => {
         setWorks(getStaticWorks())
-        // fetchWorks()
     }, [])
 
     return (
@@ -34,10 +24,8 @@ const Works = () => {
             <div className='works__cards'>
                 {works.map(work =>
                 <div className='works__card' key={work.id}>
-                    {/* <Link to={`/work/${work.id}`}> */}
                         <WorkCard key={work.id} {...work}></WorkCard>
                         <Separate></Separate>
-                    {/* </Link> */}
                 </div>)}
             </div>
         </div>)

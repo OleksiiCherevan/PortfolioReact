@@ -1,6 +1,6 @@
 import "./style.scss";
 
-import Button from "../Button";
+import Button from "../Button/index";
 import { serverAPI } from "../../assets/js/util";
 
 export default (props) => {
@@ -18,7 +18,7 @@ export default (props) => {
 
             <Button
                 lable={"Download Resume"}
-                link={serverAPI + "/files/cherevan.pdf"}
+                to={serverAPI + "/files/cherevan.pdf"}
             ></Button>
         </div>
     );

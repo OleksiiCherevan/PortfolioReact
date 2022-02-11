@@ -4,9 +4,8 @@ import { useState, useEffect } from "react";
 import { serverAPI } from "../../assets/js/util";
 import { getAboutUser } from "../../assets/js/data";
 
-import Button from "../../Atoms/Button";
-import ContactPhoto from "../../Atoms/UserPhoto";
-import UserDescripiton from "../../Atoms/UserDescripiton";
+import ContactPhoto from "../../Atoms/UserPhoto/index";
+import UserDescripiton from "../../Atoms/UserDescripiton/index";
 
 const HomeAbout = () => {
     const [userInfo, setUserInfo] = useState([]);

@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
 import "./style.scss";
 
-import { useParams } from "react-router";
+
+import LinkGet from "../LinkGet/index";
 import { Link } from "react-router-dom";
-import Separate from "../Separate";
 
 const WorkCard = (props) => {
     const {
@@ -14,6 +13,7 @@ const WorkCard = (props) => {
         describe = "",
         img = "",
     } = props;
+    
     return (
         <div className="work-card">
             <div className="work-card__image">
@@ -21,9 +21,13 @@ const WorkCard = (props) => {
             </div>
 
             <div className="work-card__details">
-                <div className="work-card__title margin-bottom" href={`/work-card/${id}`}>
+                <Link to={`/work/${id}`}>
+                <div
+                    className="work-card__title margin-bottom"
+                >
                     {title}
                 </div>
+                </Link>
 
                 <div className="work-card__metadata margin-bottom">
                     <div className="work-card__date">{date}</div>
@@ -35,6 +39,8 @@ const WorkCard = (props) => {
                 <div className="work-card__describe margin-bottom">
                     {describe}
                 </div>
+
+                <LinkGet></LinkGet>
             </div>
         </div>
     );

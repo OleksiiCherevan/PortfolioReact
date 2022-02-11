@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
 import "./style.scss";
 
+import { Link } from "react-router-dom";
+
 export default (props) => {
-    const { text, to } = props;
+    const { text } = props;
 
     return (
-        <a className="desktop-nav-item" href={to}> 
-            {text}
-        </a>
-    )    
+            <div className="desktop-nav-item">{text}</div>
+    );
 };

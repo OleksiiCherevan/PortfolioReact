@@ -2,11 +2,9 @@ import "./style.scss";
 import React from "react";
 
 import { useEffect, useState } from "react";
-// TODO server
-// import { serverAPI } from "../../../assets/js/util";
 import { getPosts as getStaticPosts } from "../../assets/js/data";
 
-import Post from "../../Atoms/Post";
+import Post from "../../Atoms/Post/index";
 import Title from "../../Atoms/Title";
 
 const countOfrecentPosts = 2;
@@ -17,15 +15,7 @@ export default () => {
     useEffect(() => {
         setPosts(getStaticPosts().slice(0, countOfrecentPosts));
     }, []);
-
-    // TODO server
-    //   useEffect(() => {
-    //     fetch(serverAPI + "/api/posts")
-    //       .then((req) => req.json())
-    //       .then((res) => setPosts(res.slice(0, countOfrecentPosts)))
-    //       .catch((err) => err);
-    //   }, []);
-
+    
     return (
         <div className="recent-posts">
             <div className="recent-posts__title">

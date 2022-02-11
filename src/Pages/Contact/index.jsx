@@ -1,6 +1,6 @@
 import "./style.scss";
 
-import ContactForm from "../../Molecules/ContactForm";
+import ContactForm from "../../Molecules/ContactForm/index";
 
 import ContactPhoto from './../../assets/img/user/contact-photo.jpg'
 

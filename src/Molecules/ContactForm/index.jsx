@@ -7,11 +7,10 @@ import {
     setEmail,
     setPhone,
     setMessage,
-    setIsSendedMessage,
 } from "../../store/contactSlice";
 
-import TextBox from "../../Atoms/TextBox";
-import TextArea from "../../Atoms/TextArea";
+import TextBox from "../../Atoms/TextBox/index";
+import TextArea from "../../Atoms/TextArea/index";
 
 import emailjs from "emailjs-com";
 
@@ -71,6 +70,7 @@ const ContactForm = () => {
 
     return (
         <div className="contact-form">
+            
             <div className="contact-form-fields">
                 <TextBox
                     pattern={"Your name: *"}

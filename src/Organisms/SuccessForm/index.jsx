@@ -1,7 +1,6 @@
 import './style.scss'
 
-import { currentRoute } from '../../assets/js/util'
-import Button from '../../Atoms/Button'
+import Button from '../../Atoms/Button/index'
 
 const SuccessForm = () => {
     return (

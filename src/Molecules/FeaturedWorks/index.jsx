@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 import { serverAPI } from "../../assets/js/util";
 import { getWorks as getStaticWorks } from "../../assets/js/data";
 
-import WorkCard from "../../Atoms/WorkCard";
-import Title from "../../Atoms/Title";
-import Separate from "../../Atoms/Separate";
+import WorkCard from "../../Atoms/WorkCard/index";
+import Title from "../../Atoms/Title/index";
+import Separate from "../../Atoms/Separate/index";
 
 const countOfFeaturedWorks = 3;
 

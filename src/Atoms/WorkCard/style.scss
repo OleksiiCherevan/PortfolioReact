@@ -26,7 +26,7 @@
     &__details {
         display: flex;
         flex-direction: column;
-        gap: 21px;
+        gap: 10px;
         margin-top: -5px;
     }
 
@@ -66,6 +66,11 @@
 
     &__describe {
         margin: 0;
+    }
+
+    &__get {
+        cursor: pointer;
+        color: #2F55A3;
     }
 
     @media only screen and (max-width: 768px) {

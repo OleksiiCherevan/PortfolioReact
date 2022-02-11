@@ -1,0 +1,19 @@
+@import "./../../assets/styles/colors.scss";
+
+.link-get {
+    height: 21.6px;
+    color: #2f55a3;
+    cursor: pointer;
+
+    display: flex;
+
+    &__image {
+        height: 100%;
+    }
+
+    &__text {
+        display: inline;
+        box-sizing: inherit;
+        margin-left: 10px;
+    }
+}

@@ -1,49 +1,47 @@
 @import "./../../assets/styles/main.scss";
 
-.work-presenter {
-    padding-left: 20%;
-    padding-right: 20%;
+.work-detail {
+    padding-left: $page-pagging-x;
+    padding-right: $page-pagging-x;
+    
+    max-width: 1024px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
     &__header {
-        .work-snippet {
-            &__title {
-                color: #212529;
-                font-weight: 300;
-            }
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 
-            &__meta-container {
-                display: flex;
-                flex-direction: row;
+    &__title {
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 50px;
+    }
 
-                padding-bottom: 2em;
+    &__meta {
+        display: flex;
+        gap: 20px;
+    }
 
-                .work-snippet {
-                    &__datetime-published {
-                        display: block;
+    &__published {
+        background-color: $primary;
+        color: #fff;
+        padding: 0 10px;
+        border-radius: 50px;
+        font-weight: 900;
+        font-size: 18px;
+    }
 
-                        height: 1.5em;
-                        width: 4em;
-
-                        margin-right: 1em;
-                        border-radius: 32px;
-
-                        background-color: $primary;
-                        text-align: center;
-                        color: #fff;
-                    }
-
-                    &__hubs-items {
-                        color: #8695a4;
-                    }
-                }
-            }
-        }
-
-        .heading-img {
-            .photo {
-                width: 100%;
-            }
-        }
+    &__hubs {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 29px;
     }
     @media screen and (max-width: 768px) {
         & {
@@ -54,32 +52,27 @@
 }
 
 .work-body {
-
-    &-describe {
-        padding-bottom: 0.5em;
+    width: 100%;
+    
+    &__describe {
         font-size: 1.2em;
     }
 
-    img {
-        height: auto;
+    &__image {
         max-width: 100%;
+
+        height: auto;
+        width: 80%;
         vertical-align: middle;
-        margin: 0;
+        margin: 40px 0;
+
     }
 
-    p {
-        font-size: 1.2em;
-        white-space: normal;
+    &_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
     }
-}
-.small-padding-bottom {
-    padding-bottom: 1em;
-}
-
-.medium-padding-bottom {
-    padding-bottom: 2em;
-}
-
-.big-padding-bottom {
-    padding-bottom: 3em;
 }

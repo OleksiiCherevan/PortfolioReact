@@ -3,11 +3,6 @@
 .post {
     height: calc(100% - 48px);
     width: 374;
-    
-    @media screen and (max-width: 768px) {
-        width: auto;
-        padding-bottom: 1em;
-    }
 
     &__header {
         color: $dark;
@@ -43,5 +38,10 @@
 
     &__description {
         font-size: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: auto;
+        padding-bottom: 1em;
     }
 }
