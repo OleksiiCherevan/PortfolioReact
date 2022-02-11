@@ -3,15 +3,26 @@
 .work-detail {
     padding-left: $page-pagging-x;
     padding-right: $page-pagging-x;
-    
-    max-width: 1024px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 
+    @media screen and (max-width: 768px) {
+        & {
+            padding-left: $mobile-page-padding-x;
+            padding-right: $mobile-page-padding-x;
+        }
+    }
+}
+
+.work-header {
+    max-width: 1024px;
+    width: 65%;
+    
     &__header {
+        max-width: 1024px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -43,17 +54,17 @@
         font-size: 20px;
         line-height: 29px;
     }
-    @media screen and (max-width: 768px) {
-        & {
-            padding-left: $page-pagging-x;
-            padding-right: $page-pagging-x;
-        }
-    }
+
+  
 }
 
 .work-body {
-    width: 100%;
-    
+    max-width: 1024px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     &__describe {
         font-size: 1.2em;
     }
@@ -62,17 +73,15 @@
         max-width: 100%;
 
         height: auto;
-        width: 80%;
+        width: 100%;
         vertical-align: middle;
         margin: 40px 0;
-
     }
 
-    &_content {
+    &__content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
     }
 }

@@ -1,28 +1,33 @@
 import "./style.scss";
 
 import { useState, useEffect } from "react";
-import { serverAPI, currentRoute } from "../../assets/js/util";
-
-import { getWorks as getStaticWorks } from "../../assets/js/data";
 import { useParams } from "react-router";
 
-const WorkDetail = () => {
-    // const id = currentRoute()[3][currentRoute()[3].length-1]
+import ReactHtmlParser from 'react-html-parser'
+import { serverAPI, currentRoute } from "../../assets/js/util";
+import { getWorks as getStaticWorks } from "../../assets/js/data";
+
+const WorkDetail = (props) => {
+    // const { title, describe, date, tag, img, html } = props;
+
     const { id } = useParams();
     const [work, setWork] = useState(getStaticWorks()[id]);
+    // i`will change it soon
+    const { title, describe, date, tag, img, html } = work
 
-    const { title, describe, date, tag, img, html } = work ? work : {};
     return (
         <div className="work-detail">
-            <div className="work-detail__header">
-                <h1 className="work-detail__title">{title}</h1>
+            
+            {/* header */}
+            <div className="work-header">
+                <h1 className="work-header__title">{title}</h1>
 
-                <div className="work-detail__meta">
-                    <div className="work-detail__published">
+                <div className="work-header__meta">
+                    <div className="work-header__published">
                         {date}
                     </div>
 
-                    <div className="work-detail__hubs">
+                    <div className="work-header__hubs">
                         {tag ? tag.join(" ") : ""}
                     </div>
                 </div>
@@ -30,17 +35,14 @@ const WorkDetail = () => {
 
             {/* body */}
             <div className="work-body">
-                <div xmlns="http://www.w3.org/1999/xhtml">
                     <div className="work-body__describe">{describe}</div>
 
                     <img className="work-body__image" src={img}></img>
 
                     <div className="work-bory__content">
-                        {html
-                            ? html.map((item) => <p key={item}>{item}</p>)
-                            : []}
+                        { ReactHtmlParser(html) }
                     </div>
-                </div>
+
             </div>
         </div>
     );

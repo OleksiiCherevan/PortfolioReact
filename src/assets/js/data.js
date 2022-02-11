@@ -17,8 +17,8 @@ export const getWorks = () => {
             describe: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
             img: work1,
             html: [
-                "Every React developer or web developer in general needs to be able to show off what they can do to any potential client or employer.",
-                "That's exactly what we're going to be building right now, with the help of a number of industry standard tools, including React, Sass, and HTML.",
+                "<p>Every React developer or web developer in general needs to be able to show off what they can do to any potential client or employer.</p>",
+                "<p>That's exactly what we're going to be building right now, with the help of a number of industry standard tools, including React, Sass, and HTML.</p>",
             ],
         },
         {
