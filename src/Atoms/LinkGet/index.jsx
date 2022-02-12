@@ -1,8 +1,7 @@
 import './style.scss'
 
 export default (props) => {
-    const { to } = props
-
+    
     return (
        <div className="link-get">
                     <svg className="link-get__image"

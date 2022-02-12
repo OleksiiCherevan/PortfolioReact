@@ -1,11 +1,10 @@
-import workImgPortfolio from "./../img/works/workImgPortfolio.png";
-import workImgPortfolioBack from "./../img/works/workImgPortfolioBack.jpg";
+// import work1 from "./../../assets/img/works/img1.png"
+// import work2 from "./../../assets/img/works/img2.png"
+// import work3 from "./../../assets/img/works/img3.png"
 
-import work1 from "./../../assets/img/works/img1.png"
-import work2 from "./../../assets/img/works/img2.png"
-import work3 from "./../../assets/img/works/img3.png"
+// import userPhoto from "./../img/user/photo.png";
+import blank from './../../assets/img/background/blank.png'
 
-import userPhoto from "./../img/user/photo.png";
 
 export const getWorks = () => {
     const works = [
@@ -14,20 +13,18 @@ export const getWorks = () => {
             title: "Designing Dashboards",
             date: "2020",
             tag: ["Dashboard"],
-            describe: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-            img: work1,
-            html: [
-                "<p>Every React developer or web developer in general needs to be able to show off what they can do to any potential client or employer.</p>",
-                "<p>That's exactly what we're going to be building right now, with the help of a number of industry standard tools, including React, Sass, and HTML.</p>",
-            ],
+            description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            workImage: blank,
+            html: 
+                "<p>Every React developer or web developer in general needs to be able to show off what they can do to any potential client or employer.</p> <p>That's exactly what we're going to be building right now, with the help of a number of industry standard tools, including React, Sass, and HTML.</p><p>That's exactly what we're going to be building right now, with the help of a number of industry standard tools, including React, Sass, and HTML.</p>",
         },
         {
             id: 1,
             title: "Vibrant Portraits of 2020",
             date: "2018",
             tag: ["Illustration"],
-            describe: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-            img: work2,
+            description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            workImage: blank,
             html: [
                 "Every React developer or web developer in general needs to be able to show off what they can do to any potential client or employer.",
                 "That's exactly what we're going to be building right now, with the help of a number of industry standard tools, including React, Sass, and HTML.",
@@ -38,8 +35,8 @@ export const getWorks = () => {
             title: "36 Days of Malayalam type",
             date: "2018",
             tag: ["Typography"],
-            describe: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-            img: work3,
+            description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            workImage: blank,
             html: [
                 "Every React developer or web developer in general needs to be able to show off what they can do to any potential client or employer.",
                 "That's exactly what we're going to be building right now, with the help of a number of industry standard tools, including React, Sass, and HTML.",
@@ -48,6 +45,7 @@ export const getWorks = () => {
     ];
     return works;
 };
+
 
 export const getPosts = () => {
     const posts = [
@@ -80,14 +78,23 @@ export const getPosts = () => {
     return posts;
 };
 
+
 export const getAboutUser = () => {
     const user = {
         name: "Alex",
-        photo: userPhoto,
+        userPhoto: blank,
         profesion: "Creative Technologist",
-        // text: 'I\'m just person who really enjoy coding  :3'
-        text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     };
 
     return user;
 };
+
+
+export const getContact = () => {
+    const contact = {
+        description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enimvelit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.',
+        userPhoto: blank
+    }
+    return contact
+}

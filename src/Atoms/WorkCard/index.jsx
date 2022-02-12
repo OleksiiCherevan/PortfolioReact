@@ -11,13 +11,13 @@ const WorkCard = (props) => {
         date = "",
         tag = [""],
         describe = "",
-        img = "",
+        workImage = "",
     } = props;
     
     return (
         <div className="work-card">
             <div className="work-card__image">
-                <img alt="img" src={img}></img>
+                <img alt="img" src={workImage}></img>
             </div>
 
             <div className="work-card__details">

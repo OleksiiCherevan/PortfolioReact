@@ -17,6 +17,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="app">
+                <div className="app-content">
                 <Header></Header>
 
                 <Routes>
@@ -26,14 +27,11 @@ function App() {
                     <Route exact path="/works" element={<Works></Works>} />
                     <Route exact path={"/contact"} element={<Contact />} />
                     <Route path={`/work/:id`} element={<WorkDetail />} />
-                    <Route
-                        exact
-                        path="/success"
-                        element={<Success />}
-                    ></Route>
+                    <Route exact path="/success" element={<Success />}></Route>
                 </Routes>
 
                 <Footer></Footer>
+                </div>
             </div>
         </BrowserRouter>
     );

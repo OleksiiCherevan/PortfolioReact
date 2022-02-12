@@ -12,6 +12,7 @@ const WorkDetail = (props) => {
 
     const { id } = useParams();
     const [work, setWork] = useState(getStaticWorks()[id]);
+    
     // i`will change it soon
     const { title, describe, date, tag, img, html } = work
 

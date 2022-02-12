@@ -4,11 +4,11 @@
     padding: 0 $page-pagging-x 0 $page-pagging-x;
 
     &__title {
-        padding-top: 15px;
+        
     }
 
     &__cards {
-        padding-top: 22px;
+        
     }
     
     &__card-separate {
@@ -18,10 +18,10 @@
     
     @media only screen and (max-width: 768px) {
         padding: 0 $mobile-page-padding-x 0 $mobile-page-padding-x;
-        // flex-direction: column;
+        
         
     &__title {
-        text-align: center;
+        text-align: start;
     }
     }
 }

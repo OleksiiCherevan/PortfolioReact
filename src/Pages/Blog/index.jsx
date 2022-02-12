@@ -6,6 +6,7 @@ import { getPosts as getStaticPosts } from "../../assets/js/data";
 
 import Post from "../../Atoms/Post/index.js";
 import Separate from "../../Atoms/Separate/index";
+import PageHeader from "../../Atoms/PageHeader";
 
 const Blog = () => {
     const [posts, setPosts] = useState([]);
@@ -16,7 +17,8 @@ const Blog = () => {
 
     return (
         <div className="blog">
-            <h1 className="blog__label">Blog</h1>
+            <PageHeader>Blog</PageHeader>
+            
             <div className="blog__body">
                 {posts.map((post) => (
                     <div className="blog__card" key={post.key}>

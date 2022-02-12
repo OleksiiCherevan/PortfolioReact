@@ -5,12 +5,8 @@
     padding: 0 $page-pagging-x 0 $page-pagging-x;
 
 
-    &__title {
-        padding-top: 7px;
-    }
-
     &-cards {
-        height: 295px;
+        min-height: 295px;
         display: flex;
         flex-direction: row;
         gap: 20px;

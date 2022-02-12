@@ -3,11 +3,6 @@
 .works {
     padding: 0 $page-pagging-x;
 
-    &__title {
-        padding-bottom: 1em;
-        background-color: $background;
-    }
-
     &__cards { 
         display: flex;
         flex-direction: column;

@@ -7,6 +7,7 @@ import { getWorks as getStaticWorks } from '../../assets/js/data'
 
 import WorkCard from '../../Atoms/WorkCard'
 import Separate from '../../Atoms/Separate'
+import PageHeader from '../../Atoms/PageHeader'
 
 const Works = () => {
     const [works, setWorks] = useState([])
@@ -17,9 +18,7 @@ const Works = () => {
 
     return (
         <div className='works'>
-            <h1 className='works__title'>
-                Works
-            </h1>
+            <PageHeader>Works</PageHeader>
 
             <div className='works__cards'>
                 {works.map(work =>
