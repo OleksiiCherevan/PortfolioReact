@@ -14,7 +14,7 @@ const WorkDetail = (props) => {
     const [work, setWork] = useState(getStaticWorks()[id]);
     
     // i`will change it soon
-    const { title, describe, date, tag, img, html } = work
+    const { title, description, date, tag, workImage, html } = work
 
     return (
         <div className="work-detail">
@@ -36,11 +36,11 @@ const WorkDetail = (props) => {
 
             {/* body */}
             <div className="work-body">
-                    <div className="work-body__describe">{describe}</div>
+                    <div className="work-body__describe">{description}</div>
 
-                    <img className="work-body__image" src={img}></img>
+                    <img className="work-body__image" src={workImage}></img>
 
-                    <div className="work-bory__content">
+                    <div className="work-body__content">
                         { ReactHtmlParser(html) }
                     </div>
 

@@ -12,6 +12,7 @@
         display: flex;
 
         min-width: 246px;
+        // max-height: 246px;
         height: 180px;
         width: 246px;
 
@@ -20,7 +21,7 @@
 
         > img {
             border-radius: 4px;
-            height: 100%;
+            object-fit: cover;
             width: 100%;
         }
     }

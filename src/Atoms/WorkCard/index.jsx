@@ -1,6 +1,5 @@
 import "./style.scss";
 
-
 import LinkGet from "../LinkGet/index";
 import { Link } from "react-router-dom";
 
@@ -10,10 +9,11 @@ const WorkCard = (props) => {
         title = "",
         date = "",
         tag = [""],
-        describe = "",
+        description = "",
         workImage = "",
+        urlApp ='',
     } = props;
-    
+
     return (
         <div className="work-card">
             <div className="work-card__image">
@@ -22,11 +22,9 @@ const WorkCard = (props) => {
 
             <div className="work-card__details">
                 <Link to={`/work/${id}`}>
-                <div
-                    className="work-card__title margin-bottom"
-                >
-                    {title}
-                </div>
+                    <div className="work-card__title margin-bottom">
+                        {title}
+                    </div>
                 </Link>
 
                 <div className="work-card__metadata margin-bottom">
@@ -37,10 +35,12 @@ const WorkCard = (props) => {
                 </div>
 
                 <div className="work-card__describe margin-bottom">
-                    {describe}
+                    {description}
                 </div>
 
+                <a href={urlApp}>
                 <LinkGet></LinkGet>
+                </a>
             </div>
         </div>
     );
