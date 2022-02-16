@@ -4,7 +4,7 @@
 
 // import userPhoto from "./../img/user/photo.png";
 import blank from "./../../assets/img/background/blank.png";
-
+import userPhoto from './../../assets/img/user/logo.jpg'
 import currencies from "./../img/works/exchange-money.jpg";
 
 export const getWorks = () => {
@@ -149,7 +149,7 @@ export const getPosts = () => {
 export const getAboutUser = () => {
     const user = {
         name: "Alex",
-        userPhoto: blank,
+        userPhoto: userPhoto,
         profesion: "Creative Technologist",
         description:
             "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
@@ -162,7 +162,7 @@ export const getContact = () => {
     const contact = {
         description:
             "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enimvelit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-        userPhoto: blank,
+        userPhoto: userPhoto,
     };
 
     return contact;
