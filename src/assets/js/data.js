@@ -37,44 +37,33 @@ export const getWorks = () => {
         },
         {
             id: 1,
-            title: "Vibrant Portraits of 2020",
-            date: "2018",
-            tag: ["Illustration"],
+            title: "Awesome product card",
+            date: "2021",
+            tag: ["Design", "React"],
             description:
-                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-            workImage: blank,
-            html: `<p>So my&nbsp;</p>
-
-            <img
-                src="https://i.ibb.co/ZYfHgrf/simple-awesome-product-card.png"
-                alt="simple-awesome-product-card"
-                border="0"
-            />
-        
-            <img
-                src="https://i.ibb.co/34FxMZW/simple-awesome-product-card-common.png"
-                alt="simple-awesome-product-card-common"
-                border="0"
-            />
-            <img
-                src="https://i.ibb.co/xXq3dJC/simple-awesome-product-card-out-of-stock.png"
-                alt="simple-awesome-product-card-out-of-stock"
-                border="0"
-            />
-        
-            <img
-                src="https://i.ibb.co/98pxJfS/simple-awesome-product-card-finish-hover.png"
-                alt="simple-awesome-product-card-finish-hover"
-                border="0"
-            />
-            <img
-                src="https://i.ibb.co/Vxwd7BF/simple-awesome-product-card-finish-hover-size.png"
-                alt="simple-awesome-product-card-finish-hover-size"
-                border="0"
-            />
-        
-            `,
-        },
+                "Product card for clothes store. I created a simple react component what can improve sales and attracts people attention",
+            workImage:
+                "https://i.ibb.co/vjkbT3t/simple-awesome-product-card.png",
+            html: `
+            <p><strong>So my answer:&nbsp;</strong></p>
+<p>This is a simple implementation of this idea. Main task of this card is to provide better way to do shoping in online shop or store. We have four key the card functions:&nbsp;</p>
+<ol>
+<li>Good appereance of the card.&nbsp;</li>
+<li>Indicate if the storage have no any product</li>
+<li>Gives a customer an opportunity to choose some card attributes&nbsp;</li>
+<li>Gives an opportunity to buy product with click "Buy"</li>
+</ol>
+<p>1. <strong>Appearance</strong>: this card looks pretty good, i can see main information such as price and name of the product</p>
+<p><img src="https://i.ibb.co/34FxMZW/simple-awesome-product-card-common.png" alt="simple-awesome-product-card-common" border="0" /></p>
+<p>2. <strong>Disabled state of the card</strong>: If storage have no product the card gives follow message:</p>
+<p>Out of stock.;</p>
+<p><img src="https://i.ibb.co/xXq3dJC/simple-awesome-product-card-out-of-stock.png" alt="simple-awesome-product-card-out-of-stock" border="0" /></p>
+<p>3.<strong>Opportunity</strong> to choose the attributes what customer will need.<img src="https://i.ibb.co/Vxwd7BF/simple-awesome-product-card-finish-hover-size.png" alt="simple-awesome-product-card-finish-hover-size" border="0" /></p>
+<p>4. <strong>Buy product with click</strong> on Buy button. So just a button what can help you to buy a product. Pretty useful)</p>
+<p><img src="https://i.ibb.co/98pxJfS/simple-awesome-product-card-finish-hover.png" alt="simple-awesome-product-card-finish-hover" border="0" /></p>
+<p>This app's code on gitHub: <a href="https://github.com/OleksiiCherevan/simple-awesome-product-card">simple-awesome-product-card</a></p>
+<p>I hope it was helpful for you! Enjoy =)&nbsp;</p>
+`},
         {
             id: 2,
             title: "36 Days of Malayalam type",
