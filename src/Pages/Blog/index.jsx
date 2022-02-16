@@ -4,7 +4,7 @@ import { serverAPI } from "../../assets/js/util";
 import { useEffect, useState } from "react";
 import { getPosts as getStaticPosts } from "../../assets/js/data";
 
-import Post from "../../Atoms/Post/index.js";
+import Post from "../../Atoms/Post/index";
 import Separate from "../../Atoms/Separate/index";
 import PageHeader from "../../Atoms/PageHeader";
 
