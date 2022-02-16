@@ -72,7 +72,7 @@ export const getWorks = () => {
             date: "2021",
             tag: ["ReactJS, Graphql"],
             description:
-                "Test task. Create a simple shop with ReactJs and GraphQL. It works with graphql back-end. add some product to cart, choose the currency or change the attributes a few words about this project",
+                "Test task. Create a simple shop with ReactJs and GraphQL. It works with graphql back-end. You can add some products to cart, choose the currency or change the attributes. It was a few words about this project",
             urlApp: 'https://github.com/OleksiiCherevan/simple-shop',
                 workImage: 'https://i.ibb.co/tZypt0K/main.png',
             html: `
