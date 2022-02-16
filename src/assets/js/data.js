@@ -15,7 +15,7 @@ export const getWorks = () => {
             date: "2020",
             tag: ["Development", "Exchanger"],
             description:
-                "It was a my test task. I had to develop an exhange money app. It icludes work with react hooks, get information from API and function components",
+                "It was my test task. I had to develop an exhange money app. It includes work with react hooks, get information from API and function components",
             workImage: currencies,
             urlApp: "https://github.com/OleksiiCherevan/exchanger",
             html: `<p><strong>My application have to solve these problems:&nbsp;</strong></p>
@@ -41,9 +41,11 @@ export const getWorks = () => {
             date: "2021",
             tag: ["Design", "React"],
             description:
-                "Product card for clothes store. I created a simple react component what can improve sales and attracts people attention",
+                "Product card for clothes store. It was my test task. I had to create a simple react component. It`s a product card with interesting design and functionality",
             workImage:
-                "https://i.ibb.co/vjkbT3t/simple-awesome-product-card.png",
+                "https://i.ibb.co/vjkbT3t/simple-awesome-product-card.png", 
+                urlApp: "https://github.com/OleksiiCherevan/simple-awesome-product-card",
+           
             html: `
             <p><strong>So my answer:&nbsp;</strong></p>
 <p>This is a simple implementation of this idea. Main task of this card is to provide better way to do shoping in online shop or store. We have four key the card functions:&nbsp;</p>
@@ -66,16 +68,46 @@ export const getWorks = () => {
 `},
         {
             id: 2,
-            title: "36 Days of Malayalam type",
-            date: "2018",
-            tag: ["Typography"],
+            title: "Simple shop",
+            date: "2021",
+            tag: ["ReactJS, Graphql"],
             description:
-                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-            workImage: blank,
-            html: [
-                "Every React developer or web developer in general needs to be able to show off what they can do to any potential client or employer.",
-                "That's exactly what we're going to be building right now, with the help of a number of industry standard tools, including React, Sass, and HTML.",
-            ],
+                "Test task. Create a simple shop with ReactJs and GraphQL. It works with graphql back-end. add some product to cart, choose the currency or change the attributes a few words about this project",
+            urlApp: 'https://github.com/OleksiiCherevan/simple-shop',
+                workImage: 'https://i.ibb.co/tZypt0K/main.png',
+            html: `
+            <p>My task was to create simple shop with back-end part (graphql server) with data.</p>
+<p>It's a simple shop with categories, card, bag, card detail and currency...</p>
+<p>At first i decide to decompose my application:&nbsp;</p>
+<p>I had to create this big part:</p>
+<ul>
+<li>header</li>
+<li>products</li>
+<li>currency-menu</li>
+<li>bag-menu</li>
+<li>cart-menu</li>
+<li>and etc...</li>
+</ul>
+<p>At the photo you can see "<strong>main page</strong>" of application. As you can see there are categories, currency changer menu, cart menu, chose category and product cards.</p>
+<p><img src="https://i.ibb.co/tZypt0K/main.png" alt="main" border="0" /></p>
+<p><strong>You can change the category</strong>: Change the category and then page will sort products by category.</p>
+<p><img src="https://i.ibb.co/xGGv8qm/colthes.png" alt="colthes" border="0" /></p>
+<p><strong>Currency change menu</strong>: Back-end part of this application returns a couple of currencies and you can choose that currency what you need... So price will change =)</p>
+<p><img src="https://i.ibb.co/gFQjR5T/currency.png" alt="currency" border="0" /></p>
+<p><strong>Cart menu</strong>: Cart menu let you change some product's attributes or count.&nbsp;</p>
+<p><img src="https://i.ibb.co/v4qvn7Z/cart.png" alt="cart" border="0" /></p>
+<p><strong>Bag menu</strong>: It's just elder brother of cart menu. You can do the same with your item like in cart menu.</p>
+<p><img src="https://i.ibb.co/XSXSdFH/bag.png" alt="bag" border="0" /></p>
+<p><strong>Product description page</strong>: If you click on the product card you will open description page. This is a place where you can read info about the project and choose attributes for product.</p>
+<p><img src="https://i.ibb.co/BPJQRyn/detail1.png" alt="detail1" border="0" /></p>
+<p><img src="https://i.ibb.co/Wk6fwtp/detail2.png" alt="detail2" border="0" /></p>
+<p><strong>Product description images</strong>: you can choose the image and see more information about product.</p>
+<p><img src="https://i.ibb.co/7Cp0HHW/detail3.png" alt="detail3" border="0" /></p>
+<p>Probably i was too short, please don't be cruel.&nbsp;</p>
+<p>Application: <a href="https://github.com/OleksiiCherevan/simple-shop">simple-shop</a></p>
+<p>All the best! And have a good day!</p>
+<p>&nbsp;</p>
+            `,
         },
     ];
 

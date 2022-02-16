@@ -29,7 +29,7 @@ const WorkDetail = (props) => {
                     </div>
 
                     <div className="work-header__hubs">
-                        {tag ? tag.join(" ") : ""}
+                        {tag ? tag.join(", ") : ""}
                     </div>
                 </div>
             </div>
