@@ -6,6 +6,7 @@ import { getAboutUser } from "../../assets/js/data";
 
 import ContactPhoto from "../../Atoms/UserPhoto/index";
 import UserDescripiton from "../../Atoms/UserDescripiton/index";
+import UserPhoto from "../../Atoms/UserPhoto/index";
 
 const HomeAbout = () => {
     const [userInfo, setUserInfo] = useState([]);
@@ -23,7 +24,7 @@ const HomeAbout = () => {
             <UserDescripiton {...userInfo}></UserDescripiton>
 
             <div className="about-user__user-photo">
-            <ContactPhoto {...userInfo}></ContactPhoto>
+            <ContactPhoto photo = {userInfo.userPhoto}></ContactPhoto>
             </div>
         </div>
     );
