@@ -3,9 +3,7 @@
 // import work3 from "./../../assets/img/works/img3.png"
 
 // import userPhoto from "./../img/user/photo.png";
-import blank from "./../../assets/img/background/blank.png";
-import userPhoto from './../../assets/img/user/logo.jpg'
-import currencies from "./../img/works/exchange-money.jpg";
+import userPhoto from "./../../assets/img/user/logo.jpg";
 
 export const getWorks = () => {
     const works = [
@@ -16,7 +14,7 @@ export const getWorks = () => {
             tag: ["Development", "Exchanger"],
             description:
                 "It was my test task. I had to develop an exhange money app. It includes work with react hooks, get information from API and function components",
-            workImage: currencies,
+            workImage: 'https://i.ibb.co/tKmG1Qy/exchange-money.jpg',
             urlApp: "https://github.com/OleksiiCherevan/exchanger",
             html: `<p><strong>My application have to solve these problems:&nbsp;</strong></p>
             <p>- get currencies from API</p>
@@ -43,9 +41,9 @@ export const getWorks = () => {
             description:
                 "Product card for clothes store. It was my test task. I had to create a simple react component. It`s a product card with interesting design and functionality",
             workImage:
-                "https://i.ibb.co/vjkbT3t/simple-awesome-product-card.png", 
-                urlApp: "https://github.com/OleksiiCherevan/simple-awesome-product-card",
-           
+                "https://i.ibb.co/vjkbT3t/simple-awesome-product-card.png",
+            urlApp: "https://github.com/OleksiiCherevan/simple-awesome-product-card",
+
             html: `
             <p><strong>So my answer:&nbsp;</strong></p>
 <p>This is a simple implementation of this idea. Main task of this card is to provide better way to do shoping in online shop or store. We have four key the card functions:&nbsp;</p>
@@ -65,7 +63,8 @@ export const getWorks = () => {
 <p><img src="https://i.ibb.co/98pxJfS/simple-awesome-product-card-finish-hover.png" alt="simple-awesome-product-card-finish-hover" border="0" /></p>
 <p>This app's code on gitHub: <a href="https://github.com/OleksiiCherevan/simple-awesome-product-card">simple-awesome-product-card</a></p>
 <p>I hope it was helpful for you! Enjoy =)&nbsp;</p>
-`},
+`,
+        },
         {
             id: 2,
             title: "Simple shop",
@@ -73,8 +72,8 @@ export const getWorks = () => {
             tag: ["ReactJS, Graphql"],
             description:
                 "Test task. Create a simple shop with ReactJs and GraphQL. It works with graphql back-end. You can add some products to cart, choose the currency or change the attributes. It was a few words about this project",
-            urlApp: 'https://github.com/OleksiiCherevan/simple-shop',
-                workImage: 'https://i.ibb.co/tZypt0K/main.png',
+            urlApp: "https://github.com/OleksiiCherevan/simple-shop",
+            workImage: "https://i.ibb.co/tZypt0K/main.png",
             html: `
             <p>My task was to create simple shop with back-end part (graphql server) with data.</p>
 <p>It's a simple shop with categories, card, bag, card detail and currency...</p>
