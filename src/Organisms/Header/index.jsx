@@ -19,18 +19,22 @@ export default () => {
     return (
         <header className="header">
             <div className="navigation">
-                <Link to="/home">
-                    <DesktopItem text="Home" />
-                </Link>
-                <Link to="/blog">
-                    <DesktopItem text="Blog"  />
-                </Link>
-                <Link to="/works">
-                    <DesktopItem text="Works"  />
-                </Link>
-                <Link to="/contact">
-                    <DesktopItem text="Contact"  />
-                </Link>
+                <div className="navigation-contact">OleksiiCherevan@gmail.com</div>
+
+                <div className="navigation-list">
+                    <Link to="/home">
+                        <DesktopItem text="Home" />
+                    </Link>
+                    <Link to="/blog">
+                        <DesktopItem text="Blog" />
+                    </Link>
+                    <Link to="/works">
+                        <DesktopItem text="Works" />
+                    </Link>
+                    <Link to="/contact">
+                        <DesktopItem text="Contact" />
+                    </Link>
+                </div>
             </div>
 
             <div className="navigation-mobile">
@@ -42,16 +46,16 @@ export default () => {
                 {isMobile ? (
                     <div className="navigation-mobile__list">
                         <Link to="/home">
-                            <MobileItem  text="Home" />
+                            <MobileItem text="Home" />
                         </Link>
                         <Link to="/blog">
-                            <MobileItem  text="Blog" />
+                            <MobileItem text="Blog" />
                         </Link>
                         <Link to="/works">
-                            <MobileItem  text="Works" />
+                            <MobileItem text="Works" />
                         </Link>
                         <Link to="/contact">
-                            <MobileItem  text="Contact" />
+                            <MobileItem text="Contact" />
                         </Link>
                     </div>
                 ) : null}

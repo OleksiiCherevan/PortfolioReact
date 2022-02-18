@@ -4,7 +4,7 @@ $svg-menu: url("./../../assets/img/menu/menu.png");
 
 .header {
     min-height: 70px;
-    padding-right: 60px;
+    padding-left: $page-pagging-x;
 
     @media screen and (max-width: 768px) {
         padding-right: 0;
@@ -13,13 +13,25 @@ $svg-menu: url("./../../assets/img/menu/menu.png");
     .navigation {
         margin-top: 26px;
         display: flex;
-        justify-content: flex-end;
-        background-color: $background;
+        flex-direction: row;
+        justify-content: space-between;
 
-        gap: 34px;
-
+        
         @media screen and (max-width: 768px) {
             display: none;
+        }
+
+        &-contact {
+            margin-right: 30px;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: flex-end;
+            background-color: $background;
+
+            gap: 34px;
+
         }
     }
 
