@@ -9,9 +9,11 @@ export default (props) => {
     return (
         <div className="user-description">
             <div className="user-description__name">
-                Hi, I am {name},
+                Hi! 
                 <br />
-                {profesion}
+                { `I'm ${name}`}
+                <br />
+                {`Creative developer`}
             </div>
 
             <div className="user-description__text">{text}</div>

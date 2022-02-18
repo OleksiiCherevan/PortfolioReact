@@ -118,28 +118,43 @@ export const getPosts = () => {
     const posts = [
         {
             key: 0,
-            header: "Making a design system from scratch",
-            date: "12 Feb 2020",
-            tag: ["Design", "Pattern"],
+            header: "Create new project with Ajax",
+            date: "25 Mar 2021",
+            tag: ["Design", "Ajax"],
             description:
-                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+                "My experience with ajax requests. The client gives me a new scratch with ajax and i had to create a new web applicatoin from that scratch. I felt i will learn something interesting and new.",
         },
         {
             key: 1,
-            header: "Creating pixel perfect icons in Figma",
-            date: "12 Feb 2020",
-            tag: ["Figma", "Icon Design"],
+            header: "Creating favicon",
+            date: "11 Apr 2021",
+            tag: ["Photoshop", "Icon Design"],
             description:
-                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+                "I can do everything. I needed a new favicon for my web app so i asked myself - How can i do it?. At first i downloaded a couple images about future icon thematic and started analyzing. After some time i chose the best image. After some work with photoshop and my brain i created my favicon",
         },
-        ,
         {
             key: 2,
-            header: "My goal is to become a front-end developer",
-            date: "5 August 2021",
-            tag: ["Design", "Programing"],
+            header: "Experience with graphQL",
+            date: "5 Aug 2021",
+            tag: ["React", "GraphQL"],
             description:
-                "I think a lot about it. I start learning pure HTML and CSS and i wanna learn some web framework such as Angular or ReactJS",
+                "I neded to create a shop with graphQL as a back-end part. I decided to use Apollo client because it had a good documentation and support. I learned how to create simple requests and work with graphQL server. It`s very effective technologie. I liked working with it.",
+        },
+        {
+            key: 3,
+            header: "Creating SPA",
+            date: "1 Aug 2021",
+            tag: ["React", "Route"],
+            description:
+                "The customer gave me a task. My task was to create React application without reloading web page. I knew about react-router-doom so i had no problem to create web page with this kind of functionality.",
+        },
+        {
+            key: 4,
+            header: "TypeScript is powerful",
+            date: "4 Oct 2021",
+            tag: ["TypeScript", "Programing"],
+            description:
+                "When i worked with quite big project i had some troubles because my classes, functions and variables had any type and sometimes it was a problem. My first experience with type script was terrible... I had no experience how to create type, interface or correct class but after some time it becomes better and batter. After some time it was so good when i can know what type i`ll get from my variable or that type i need to put.",
         },
     ];
 
@@ -152,7 +167,7 @@ export const getAboutUser = () => {
         userPhoto: userPhoto,
         profesion: "Creative Technologist",
         description:
-            "I really enjoy coding. I have experience with JavaScript, ReactJS, NodeJS and etc. Also i`m friendly, responsive and reliable. We can have a good work together =)",
+            "I really enjoy coding. I`m experienced developer! A worked with JavaScript, ReactJS, NodeJS, JAVA, JavaFX, SQLite, MySQL, PostgreSQL. Also i`m friendly, responsive and reliable. We can have a good work together =)",
     };
 
     return user;
@@ -161,7 +176,7 @@ export const getAboutUser = () => {
 export const getContact = () => {
     const contact = {
         description:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enimvelit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+            "Thank you for your visit to my web page. I want to tell you that i`m really happy because you can read it at the moment. So if you have some questions or offers you can write my on my email Lolmagexe@gmail.com, OleksiiCherevan@gmail.com or use this form! I promise! if you write me i`ll answer you. Also i`d like to say -All the best! And best wishes! Alex =)",
         userPhoto: userPhoto,
     };
 

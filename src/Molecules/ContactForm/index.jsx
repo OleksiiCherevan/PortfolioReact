@@ -85,9 +85,7 @@ const ContactForm = () => {
                 ></TextBox>
                 <TextBox
                     pattern={"Your phone number: *"}
-                    regex={
-                        /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
-                    }
+                    regex={ /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/}
                     inputHelp={"Invalid phone number"}
                     onChange={onChangePhone}
                 ></TextBox>
