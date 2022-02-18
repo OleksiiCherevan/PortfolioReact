@@ -152,7 +152,7 @@ export const getAboutUser = () => {
         userPhoto: userPhoto,
         profesion: "Creative Technologist",
         description:
-            "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+            "I really enjoy coding. I have experience with JavaScript, ReactJS, NodeJS and etc. Also i`m friendly, responsive and reliable. We can have a good work together =)",
     };
 
     return user;
