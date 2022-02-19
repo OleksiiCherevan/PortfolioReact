@@ -67,7 +67,7 @@ export const getWorks = () => {
         },
         {
             id: 2,
-            title: "Simple shop",
+            title: "Universal shop",
             date: "2021",
             tag: ["ReactJS, Graphql"],
             description:
