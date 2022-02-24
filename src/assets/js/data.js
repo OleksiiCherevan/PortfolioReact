@@ -175,7 +175,7 @@ export const getAboutUser = () => {
 export const getContact = () => {
     const contact = {
         description:
-            "Thank you for your visit to my web page. I want to tell you that i`m really happy because you can read it at the moment. So if you have some questions or offers you can write my on my email Lolmagexe@gmail.com, OleksiiCherevan@gmail.com or use this form! I promise! if you write me i`ll answer you. Also i`d like to say -All the best! And best wishes! Alex =)",
+            "Thank you for your visit to my web page. I want to tell you that i`m really happy because you can read it at the moment. So if you have some questions or offers you can write my on my email Lolmagexe@gmail.com, OleksiiCherevan@gmail.com or use this form! I promise! if you write me i`ll answer you. Also i`d like to say. All the best! And best wishes! Alex =)",
         userPhoto: userPhoto,
     };
 

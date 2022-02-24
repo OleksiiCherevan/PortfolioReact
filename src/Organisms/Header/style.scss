@@ -6,7 +6,7 @@ $svg-menu: url("./../../assets/img/menu/menu.png");
     min-height: 70px;
     padding-left: $page-pagging-x;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
         padding-right: 0;
     }
 
@@ -17,7 +17,7 @@ $svg-menu: url("./../../assets/img/menu/menu.png");
         justify-content: space-between;
 
         
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 769px) {
             display: none;
         }
 
