@@ -5,7 +5,7 @@ $svg-menu: url("./../../assets/img/menu/menu.png");
 .header {
     min-height: 70px;
     padding-left: $page-pagging-x;
-    padding-right: $page-pagging-x;
+    padding-right: 10px;
 
     @media screen and (max-width: 769px) {
         padding-right: 0;
